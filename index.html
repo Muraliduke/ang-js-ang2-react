@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="angularMFRP">
+
+<head>
+    <meta charset="UTF-8">
+    <title>CI eZ Deals</title>
+  
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+     
+    <!-- library script files  -->
+    <script src="assets/library/jquery.min.js"></script>
+    <script src="assets/library/angular.min.js"></script>
+    <script src="assets/library/angular-route.min.js"></script>
+    <script src="assets/library/bootstrap.js"></script>
+
+    <!-- React Library files -->
+    <script src="assets/library/build/react.min.js"></script>
+    <script src="assets/library/build/react-dom.min.js"></script>
+    <script src="assets/library/react/ngReact.js"></script>
+    
+    <!-- React Library files -->
+    <!--custom app files  -->
+  
+   <script src="app/app.js"></script>
+   <script src="hello.js"></script>
+   
+
+
+    
+</head>
+
+<body >
+    <button id='clik'>Clik</button>   <button id='diff'>diff</button>
+<div id='stuff'>
+
+  NG2 zone
+</div>
+
+<div ng-controller='mainCtrl'>
+    {{person | json}}
+    <h1>
+        <div><react-component name="Hello" props="person"/></div>
+        <small>
+          <code>&lt;react-component name="Hello" props="person"/&gt;</code>
+        </small>
+      </h1>
+
+
+      <h2>Method 2--no need ngreact</h2>
+      <input ng-model="nme"/></div><br>
+      ReactJS <hllo name="nme"></hello>
+ <hr>
+AngularJs: Hello, {{name}}
+
+
+LAST TRY
+</div>
+<script>
+  $('#clik').click(function(){
+    window.location.href='#'
+    $( "#stuff" ).load( "new.jsp" );
+  });
+
+    $('#diff').click(function(){
+      window.location.href='#'
+    $( "#stuff" ).load( "diffr.jsp" );
+    console.log(window.location);
+  });
+</script>
+
+
+</body>
+
+</html>
